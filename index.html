@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Word</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/guesstheword.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1 id="game-title"> Mystery Word Game! </h1>
+</header>
+
+<p id="hint">Hint: 🌴 🌊 ☀️</p>
+    <form>
+        <label>Enter a letter:</label>
+        <input type="text" id="myText">
+        <button type="button" id="myButton">Submit</button>
+    </form>
+
+    <div class="slots">
+        <!-- word length -->
+        <span class="output"></span>
+        <span class="output"></span>
+        <span class="output"></span>
+        <span class="output"></span>
+         <span class="output"></span>
+    </div>
+
+    <div id="incorrect" aria-live="polite"></div>
+</body>
+</html>

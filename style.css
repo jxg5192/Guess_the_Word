@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Luckiest+Guy&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  font-family: "Luckiest Guy", cursive;
+  color: #e6e8ff;
+  /* background: rgb(111, 21, 70) ;  */
+  /* background: #0e1a38;  */
+    background: linear-gradient(180deg, #00c6ff 0%, #ff9a9e 100%);
+
+  background: #101327; 
+}
+
+
+
+#game-title {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #7dd3fc; /* fun bright blue accent */
+  /* text-shadow: 0 0 10px rgba(125, 211, 252, 0.3); */
+  text-align: center;
+}
+
+#hint {
+  font-size: 20px;
+  /* color: #9aa3b2; */
+ color:  white; 
+  margin-top: 0;
+  margin-bottom: 24px;
+   font-family: "Fredoka", sans-serif;
+  text-align: center;
+
+}
+
+/* ===== form ===== */
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* background:#0e1a38 ; */
+  border: 2px solid #ffffff; 
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 16px;
+   font-family: "Fredoka", sans-serif;
+}
+
+label {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+#myText {
+  height: 40px;
+  width: 90px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #fdfdfd;
+  /* background: #0e1327; */
+  background: rgba(125, 211, 252, 0.5); 
+  border: 3px dashed #7dd3fc;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+
+#myButton {
+  height: 40px;
+  padding: 0 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  background: #7dd3fc ;
+  color: #101327; 
+  /* font-weight: 800; */
+  letter-spacing: 0.3px;
+font-family: "Luckiest Guy", cursive;
+}
+
+/* ===== letter slots ===== */
+.slots {
+  display: grid;
+  grid-template-columns: repeat(5, 60px); /* adjust for word length */
+  gap: 12px;
+  /* background: white; */
+  border: 2px solid white;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.output {
+  height: 60px;
+  display: grid;
+  place-items: center;
+  /* background: #101327;
+  border: 1px solid rgba(255, 255, 255, 0.1); */
+  border-radius: 12px;
+  border-color: white; 
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: rgba(125, 211, 252, 0.5); 
+  /* border: 3px dashed #7dd3fc; */
+  color: #111827;
+  /* transition: transform 0.15s ease; */
+}
+
+.output.revealed {
+  color: #e6e8ff;
+    border: 3px dashed #7dd3fc;
+  background: rgba(125, 211, 252, 0.5); ;
+  /* border-color: rgba(125, 211, 252, 0.35); */
+  /* box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.35); */
+  /* transform: scale(1.02); */
+}
+
+/* ===== feedback text ===== */
+
+
+#incorrect.error {
+  color: #ff0000;
+}
+
+#incorrect.success {
+  color: #00ff5e;
+}
