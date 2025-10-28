@@ -21,21 +21,21 @@ textInputButton.addEventListener("click", function() {
     for (let i = 0; i < letters.length; i++) {
         if (userVal === letters[i]) {
             output[i].innerHTML = userVal;
-            output[i].classList.add("revealed"); // styling hook (optional)
+            output[i].classList.add("revealed"); 
             found = true;
         }
     }
 
     if (found == false) {
         incorrect.className = "error";
-        incorrect.innerHTML = "Incorrect Guess, Try Again!";
+        incorrect.innerHTML = "Hmm… not quite. Guess again!";
         setTimeout(() => {
             incorrect.innerHTML = "";
             incorrect.className = "";
         }, 3000);
     } else {
         incorrect.className = "success";
-        incorrect.innerHTML = "Nice! Keep going!";
+        incorrect.innerHTML = "Great guess! Keep it going!";
         setTimeout(() => {
             incorrect.innerHTML = "";
             incorrect.className = "";
